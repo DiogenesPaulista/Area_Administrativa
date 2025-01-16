@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área Administrativa</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
         <h2>Administração</h2>
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
         <ul>
             <li><a href="#dashboard">Dashboard</a></li>
             <li><a href="#users">Usuários</a></li>
@@ -16,7 +17,7 @@
             <li><a href="#reports">Relatórios</a></li>
         </ul>
     </div>
-    <div class="main-content">
+    <div class="main-content" id="main-content">
         <header>
             <h1>Bem-vindo à Área Administrativa</h1>
         </header>
@@ -37,5 +38,6 @@
             <p>Aqui você pode visualizar os relatórios.</p>
         </section>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
