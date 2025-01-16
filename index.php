@@ -1,64 +1,41 @@
-<?php include('server.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="utf-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- <meta name="description" content="">
- <meta name="author" content="">
- <title>SB Admin - Start Bootstrap Template</title>
- <!-- Bootstrap core CSS-->
- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
- <!-- Custom fonts for this template-->
- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
- <!-- Custom styles for this template-->
- <link href="css/sb-admin.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Administrativa</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-dark">
- <div class="container">
-   <div class="card card-register mx-auto mt-5">
-     <div class="card-header">Register an Account</div>
-     <div class="card-body">
-       <form method="post" action="register.php">
-         <?php include('errors.php'); ?>
-         <div class="form-group">
-           <div class="form-row">
-             <div class="col-md-12">
-               <label for="exampleInputName">Username</label>
-               <input class="form-control" id="exampleInputName" type="text"   name="username" value="<?php echo $username; ?>" >
-             </div>
-           </div>
-         </div>
-         <div class="form-group">
-           <label for="exampleInputEmail1">Email address</label>
-           <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" name="email" value="<?php echo $email; ?>" >
-         </div>
-         <div class="form-group">
-           <div class="form-row">
-             <div class="col-md-6">
-               <label for="exampleInputPassword1">Password</label>
-               <input class="form-control" id="exampleInputPassword1" type="password" name="password_1" >
-             </div>
-            <div class="col-md-6">
-               <label for="exampleInputPassword1">Confirm Password</label>
-               <input class="form-control" id="exampleInputPassword2" type="password" name="password_2" >
-             </div>
-           </div>
-         </div>
-          <button type="submit" class="btn btn-primary btn-block" name="reg_user">Register</button>
-       </form>
-       <div class="text-center">
-         <a class="d-block small mt-3" href="login.php">Login Page</a>
-       <!--- <a class="d-block small" href="forgot-password.html">Forgot Password?</a>-->
-       </div>
-     </div>
-   </div>
- </div>
- <!-- Bootstrap core JavaScript-->
- <script src="vendor/jquery/jquery.min.js"></script>
- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
- <!-- Core plugin JavaScript-->
- <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<body>
+    <div class="sidebar">
+        <h2>Administração</h2>
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#users">Usuários</a></li>
+            <li><a href="#settings">Configurações</a></li>
+            <li><a href="#reports">Relatórios</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Bem-vindo à Área Administrativa</h1>
+        </header>
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <p>Aqui estão as informações do Dashboard.</p>
+        </section>
+        <section id="users">
+            <h2>Usuários</h2>
+            <p>Aqui você pode gerenciar os usuários.</p>
+        </section>
+        <section id="settings">
+            <h2>Configurações</h2>
+            <p>Aqui você pode ajustar as configurações do sistema.</p>
+        </section>
+        <section id="reports">
+            <h2>Relatórios</h2>
+            <p>Aqui você pode visualizar os relatórios.</p>
+        </section>
+    </div>
 </body>
 </html>
